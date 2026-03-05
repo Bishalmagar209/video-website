@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Video Website</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+        <h1 class="logo">Fashion</h1>
+        <div class="toggle"></div>
+        </header>
+        <video src="./images/fashion.mp4"autoplay muted loop></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>New Fashion show</h2>
+            <h3>Explore something New</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid nihil excepturi quod nulla distinctio ipsa consequatur delectus tempora deserunt. 
+                Dolore aliquam animi amet repellat dolorem facilis numquam maxime reiciendis cumque.
+            </p>
+            <a href="#">show</a>
+
+        </div>
+        <ul class="social">
+            <li>
+                <a href=""><img src="./images/facebook.png" alt="facebook"/></a>
+            </li>
+            <li>
+                <a href=""><img src="./images/twitter.png" alt="twitter"/></a>
+            </li>
+            <li>
+                <a href=""><img src="./images/instagram.png" alt="instagram"/></a>
+            </li>
+
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Kids</a></li>
+             <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const ToogleBtn = document.querySelector(".toggle");
+        const showcase = document.querySelector(".showcase");
+        ToogleBtn.addEventListener("click", function(){
+            ToogleBtn.classList.toggle("active");
+            showcase.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
